@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project2gpt"
+version = "0.1.0"
+description = "A Python script that converts your project into text that can be provided as prompt to ChatGPT."
+authors = [{name = "Ed1123", email = "44955050+Ed1123@users.noreply.github.com"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["GPT", "ChatGPT"]
+dependencies = [
+    'typer',
+]
+
+[project.scripts]
+2gpt = "togpt.__main__:app"
+
